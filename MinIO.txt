@@ -1,0 +1,12 @@
+Tải MinIO
+1. Tải file minio.exe tại trang chủ
+2. Tải MinIO thông qua: Invoke-WebRequest -Uri "https://dl.min.io/enterprise/minio/release/windows-amd64/minio.exe" -OutFile "D:\minio.exe"
+
+Sau khi tải xuống;
+1. setx MINIO_ROOT_USER admin
+2. setx MINIO_ROOT_PASSWORD password
+
+Khởi động MinIO
+D:\minio.exe server D:\MinIOData --console-address ":9001"
+
+Chạy dự án: streamlit run Titanic.py
